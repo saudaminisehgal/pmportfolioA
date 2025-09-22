@@ -1,0 +1,130 @@
+Architecture Plan
+File Structure
+
+/index.html
+/about.html
+/contact.html
+/case-studies/
+  clarityfirst.html
+  onehome.html
+  claimsconnect.html
+/assets/
+  /css/styles.css
+  /js/main.js
+  /img/
+    headshot-placeholder.svg
+    logo-first-american.svg
+    logo-corelogic.svg
+    logo-claimsconnect.svg
+    diagram-clarityfirst.svg
+    diagram-onehome.svg
+    diagram-claimsconnect.svg
+  /resume/Resume.pdf
+/sitemap.xml
+/robots.txt
+/README.md
+Routing & Shared Elements
+
+Consistent header with logo/name and navigation links across all pages (Home, About, Case Studies, Contact).
+
+Footer shared via copy-paste pattern with contact CTA, email, LinkedIn, and copyright.
+
+Case-study cards and stat tiles share common Tailwind utility classes supplemented by custom CSS.
+
+Breadcrumb/secondary navigation on case study pages with Prev/Next links and return to “All Case Studies” anchor on home.
+
+Design System
+
+Colors:
+
+Primary Deep Blue #0f172a (background, headings)
+
+Slate Gray #1e293b / #334155 (body text, cards)
+
+Accent Sky #0ea5e9 (links, buttons)
+
+Neutral White #ffffff (backgrounds)
+
+Muted light #e2e8f0 for dividers.
+
+Typography: Google Fonts Inter (primary) with fallback to system-ui. Hierarchy using Tailwind font sizes; custom CSS for weights & letter-spacing.
+
+Spacing & Layout: Mobile-first stack with Tailwind container utilities; max-width wrappers at max-w-7xl. Use CSS grid for stats, expertise, and timeline components.
+
+JS Enhancements: main.js handles mobile nav toggle, smooth scroll for anchor links, stat count-up animation respecting prefers-reduced-motion, and Formspree client-side validation feedback.
+
+Wireframe Notes
+Index
+
+Skip link → Sticky header with name/logo + nav + mobile menu.
+
+Hero: headline, subhead, CTA buttons, supporting blurb.
+
+Key Stats: four responsive tiles with icons/badges and footnotes.
+
+Expertise: four cards describing core capabilities.
+
+Logos strip with placeholder SVGs.
+
+Featured Case Studies: three cards highlighting key metrics and “Read Case Study” buttons.
+
+Testimonials/Quote style callout (optional) + CTA banner linking to contact.
+
+Case Studies (each)
+
+Intro hero banner with project title, role, timeline, company badge.
+
+Sections: Problem, Insights, Strategy/Bets, Execution, Results (metrics table), Learnings, Next Steps.
+
+Sidebar-style quick facts (roles, team size, tools) using responsive layout.
+
+Visual placeholder (diagram SVG) per project.
+
+Footer nav with Prev/Next buttons and link back to index case study section.
+
+About
+
+Intro narrative with mission statement and industries served.
+
+Timeline grid listing key career milestones with year, role, outcomes.
+
+Skills/Capabilities badges plus personal interests block.
+
+Call-to-action to download resume/contact.
+
+Contact
+
+Hero with headshot placeholder + tagline.
+
+Contact form (name, email, company optional, message) using Formspree endpoint placeholder, inline validation, success/error messaging.
+
+Quick links: email, LinkedIn, optional Calendly placeholder, resume download.
+
+Global Elements
+
+Footer includes analytics placeholder comment, copyright.
+
+Accessibility Checklist
+Provide “Skip to content” link before header.
+
+Semantic HTML5 structure (header, main, section, nav, footer, article).
+
+Descriptive aria-labels for navigation, toggles, and metrics.
+
+Responsive, high-contrast color palette meeting WCAG AA.
+
+Visible focus outlines on interactive elements via Tailwind/custom CSS.
+
+Alternate text for all images/SVGs; decorative SVGs marked with aria-hidden.
+
+Ensure heading hierarchy is logical (H1 → H2 → H3).
+
+Buttons vs links used correctly; form inputs linked to labels.
+
+Keyboard navigable mobile menu (focus trap not required but ensure toggles focusable).
+
+Respect prefers-reduced-motion (disable count-up animation and smooth scroll when requested).
+
+Include language attribute (lang="en") and proper meta tags for SEO/social.
+
+Provide ARIA live regions for form submission feedback.
