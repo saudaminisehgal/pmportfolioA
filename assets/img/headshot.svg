@@ -1,0 +1,8 @@
+<svg width="240" height="240" viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder headshot illustration</title>
+  <desc id="desc">Abstract avatar illustration in blue and slate colors</desc>
+  <rect width="240" height="240" fill="#f5f7fb" />
+  <circle cx="120" cy="90" r="50" fill="#1f3b73" opacity="0.85" />
+  <path d="M40 220c10-60 60-80 80-80s70 20 80 80" fill="#4b5563" opacity="0.4" />
+  <circle cx="120" cy="90" r="35" fill="#1f2937" opacity="0.55" />
+</svg>
