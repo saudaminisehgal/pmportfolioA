@@ -1,0 +1,17 @@
+<svg width="360" height="220" viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleCF">
+  <title id="titleCF">Workflow modernization diagram placeholder</title>
+  <rect width="360" height="220" fill="#f5f7fb" />
+  <g stroke="#1f3b73" stroke-width="2" fill="#fff">
+    <rect x="30" y="40" width="90" height="60" rx="8" />
+    <rect x="135" y="40" width="90" height="60" rx="8" />
+    <rect x="240" y="40" width="90" height="60" rx="8" />
+    <rect x="80" y="130" width="200" height="60" rx="12" fill="#dbe3f4" />
+  </g>
+  <path d="M120 70h15" stroke="#0f172a" stroke-width="3" marker-end="url(#arrow)" />
+  <path d="M225 70h15" stroke="#0f172a" stroke-width="3" marker-end="url(#arrow)" />
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0l10 5-10 5z" fill="#0f172a" />
+    </marker>
+  </defs>
+</svg>
