@@ -1,0 +1,11 @@
+<svg width="320" height="200" viewBox="0 0 320 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleCC">
+  <title id="titleCC">Claims automation placeholder graphic</title>
+  <rect width="320" height="200" fill="#f5f7fb" />
+  <g stroke="#1f3b73" stroke-width="2" fill="none">
+    <rect x="40" y="40" width="90" height="60" rx="10" />
+    <rect x="190" y="40" width="90" height="60" rx="10" />
+    <rect x="115" y="120" width="90" height="50" rx="10" fill="#dbe3f4" />
+    <path d="M85 100v20l70 0v-20" />
+    <path d="M235 100v20l-70 0v-20" />
+  </g>
+</svg>
