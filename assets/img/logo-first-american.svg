@@ -1,0 +1,7 @@
+<svg width="160" height="60" viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="titleFA">
+  <title id="titleFA">First American placeholder logo</title>
+  <rect width="160" height="60" rx="8" fill="#e5e9f2" />
+  <path d="M25 45V15h30l10 10v20z" fill="#1f3b73" opacity="0.8" />
+  <path d="M35 35h30" stroke="#0f172a" stroke-width="4" />
+  <text x="80" y="34" font-family="'Inter', Arial, sans-serif" font-size="16" fill="#1f2937" text-anchor="middle">First American</text>
+</svg>
