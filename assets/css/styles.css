@@ -16,13 +16,23 @@
 }
 
 body {
-  font-family: 'Inter', 'Lato', 'Open Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    "Lato",
+    "Open Sans",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background: var(--color-background);
   color: var(--color-slate);
 }
 
 a {
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 a:hover,
@@ -66,41 +76,45 @@ a:focus {
     color: #e2e8f0;
   }
 
-  .navbar a{
+  .navbar a {
     color: inherit;
   }
-  
+
   .navbar .text-brand-navy,
   .navbar .text-brand-slate {
     color: #f8fafc;
   }
-  
+
   a:hover,
   a:focus {
     color: #bae6fd;
   }
 
   .stat-card,
-  .case-card,
   .timeline-card,
   .cta-card {
     background: rgba(15, 23, 42, 0.65);
     border-color: rgba(148, 163, 184, 0.35);
   }
 
-  .case-card h3,
-  .case-card .text-brand-navy {
+  .bg-slate-900 .case-card {
+    background: rgba(15, 23, 42, 0.65);
+    border-color: rgba(148, 163, 184, 0.35);
+  }
+
+  .bg-slate-900 .case-card h3,
+  .bg-slate-900 .case-card .text-brand-navy {
     color: #f1f5f9;
   }
 
-  .case-card p,
-  .case-card li,
-  .case-card .text-slate-600,
-  .case-card .text-slate-500 {
+  .bg-slate-900 .case-card p,
+  .bg-slate-900 .case-card li,
+  .bg-slate-900 .case-card .text-slate-600,
+  .bg-slate-900 .case-card .text-slate-500 {
     color: #cbd5f5;
   }
 
-  .case-card .badge {
+  .bg-slate-900 .case-card .badge {
     background: rgba(148, 163, 184, 0.2);
     color: #e2e8f0;
   }
@@ -124,11 +138,17 @@ a:focus {
 }
 
 .case-card {
-  background: linear-gradient(135deg, rgba(15, 31, 61, 0.08), rgba(56, 189, 248, 0.15));
+  background: linear-gradient(
+    135deg,
+    rgba(15, 31, 61, 0.08),
+    rgba(56, 189, 248, 0.15)
+  );
   border-radius: 1.5rem;
   padding: 2rem;
   border: 1px solid rgba(15, 31, 61, 0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .case-card:hover,
@@ -155,13 +175,17 @@ a:focus {
 }
 
 .timeline::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0.5rem;
   top: 0.25rem;
   bottom: 0.25rem;
   width: 2px;
-  background: linear-gradient(180deg, rgba(15, 31, 61, 0.25), rgba(56, 189, 248, 0.35));
+  background: linear-gradient(
+    180deg,
+    rgba(15, 31, 61, 0.25),
+    rgba(56, 189, 248, 0.35)
+  );
 }
 
 .timeline-item {
@@ -257,10 +281,7 @@ svg {
   }
 
   a::after {
-    content: ' (' attr(href) ')';
+    content: " (" attr(href) ")";
     font-size: 0.85em;
   }
 }
-
-
-
