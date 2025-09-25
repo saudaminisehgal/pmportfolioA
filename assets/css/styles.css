@@ -87,6 +87,23 @@ a:focus {
     background: rgba(15, 23, 42, 0.65);
     border-color: rgba(148, 163, 184, 0.35);
   }
+
+  .case-card h3,
+  .case-card .text-brand-navy {
+    color: #f1f5f9;
+  }
+
+  .case-card p,
+  .case-card li,
+  .case-card .text-slate-600,
+  .case-card .text-slate-500 {
+    color: #cbd5f5;
+  }
+
+  .case-card .badge {
+    background: rgba(148, 163, 184, 0.2);
+    color: #e2e8f0;
+  }
 }
 
 .focus-ring {
@@ -244,5 +261,6 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
 
