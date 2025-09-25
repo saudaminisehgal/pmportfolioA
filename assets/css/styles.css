@@ -59,7 +59,7 @@ a:focus {
 @media (prefers-color-scheme: dark) {
   body {
     background: #0b1220;
-    color: #e2e8f0;
+    /* color: #e2e8f0;*/
   }
 
   .navbar {
@@ -235,3 +235,4 @@ svg {
     font-size: 0.85em;
   }
 }
+
