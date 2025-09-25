@@ -187,8 +187,8 @@ a:focus {
   width: 2px;
   background: linear-gradient(
     180deg,
-    rgba(146, 163, 184, 0.6),
-    rgba(56, 189, 248, 0.35)
+    rgba(148, 163, 184, 0.6),
+    rgba(56, 189, 248, 0.8)
   );
 }
 
@@ -309,4 +309,5 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
