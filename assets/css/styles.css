@@ -187,7 +187,7 @@ a:focus {
   width: 2px;
   background: linear-gradient(
     180deg,
-    rgba(15, 31, 61, 0.25),
+    rgba(146, 163, 184, 0.6),
     rgba(56, 189, 248, 0.35)
   );
 }
@@ -208,8 +208,8 @@ a:focus {
   width: 0.75rem;
   height: 0.75rem;
   border-radius: 50%;
-  background: var(--color-navy);
-  box-shadow: 0 0 0 4px rgba(15, 59, 115, 0.15);
+  background: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.25);
 }
 
 .timeline-card {
@@ -218,6 +218,13 @@ a:focus {
   padding: 1.5rem;
   border: 1px solid rgba(15, 31, 61, 0.1);
   box-shadow: 0 12px 30px rgba(15, 31, 61, 0.08);
+}
+
+.bg-slate-900 .timeline-card {
+  background: rgba(15, 23, 42, 0.72);
+  border-color: rgba(148, 163, 184, 0.35);
+  box-shadow: 0 18px 45px rgba(8, 18, 41, 0.35);
+  backdrop-filter: blur(6px);
 }
 
 .prose-callout {
@@ -302,3 +309,4 @@ svg {
     font-size: 0.85em;
   }
 }
+
