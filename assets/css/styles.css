@@ -58,14 +58,23 @@ a:focus {
 
 @media (prefers-color-scheme: dark) {
   body {
-    background: #0b1220;
-    /* color: #e2e8f0;*/
+    background: #0b1220; /* color: #e2e8f0;*/
   }
 
   .navbar {
     background: rgba(15, 23, 42, 0.9);
+    color: #e2e8f0;
   }
 
+  .navbar a{
+    color: inherit;
+  }
+  
+  .navbar .text-brand-navy,
+  .navbar .text-brand-slate {
+    color: #f8fafc;
+  }
+  
   a:hover,
   a:focus {
     color: #bae6fd;
@@ -235,4 +244,5 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
