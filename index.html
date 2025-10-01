@@ -15,21 +15,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;600&display=swap" rel="stylesheet" />
-   <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'brand-navy': '#081229',
-            'brand-slate': '#1f2937',
-            'brand-sky': '#38bdf8',
-          },
-        },
-      },
-    };
-  </script>
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+    window.tailwind = window.tailwind || {};
+    window.tailwind.config = {
+      theme: {␊
+        extend: {␊
+          colors: {␊
+            'brand-navy': '#081229',␊
+            'brand-slate': '#1f2937',␊
+            'brand-sky': '#38bdf8',␊
+          },␊
+        },␊
+      },␊
+    };␊
+  </script>␊
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>␊
   <link rel="stylesheet" href="./assets/css/styles.css" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle fill='%230f1f3d' cx='32' cy='32' r='32'/><text x='32' y='40' font-size='28' text-anchor='middle' fill='white' font-family='Arial'>S</text></svg>" />
   <!-- TODO: Add analytics script such as Plausible or Fathom once hosting is live. -->
@@ -242,6 +242,7 @@
   <script src="./assets/js/main.js" defer></script>
 </body>
 </html>
+
 
 
 
