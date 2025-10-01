@@ -13,16 +13,16 @@
   --color-card: #ffffff;
   --color-accent: #38bdf8;
   --shadow-soft: 0 20px 45px rgba(15, 31, 61, 0.1);
-cta-card-background: linear-gradient(135deg, #081229, #163260);
+  --cta-card-background: linear-gradient(135deg, rgba(31, 59, 115, 0.94), rgba(15, 31, 61, 0.92));
   --cta-heading-color: #f8fafc;
-  --cta-copy-color: #e2e8f0;
+  --cta-copy-color: rgba(226, 232, 240, 0.92);
   --cta-button-background: linear-gradient(135deg, #f8fafc, #e2e8f0);
   --cta-button-background-hover: linear-gradient(135deg, #e2e8f0, #cbd5f5);
   --cta-button-text: #0b172a;
-  --cta-button-border: rgba(8, 18, 41, 0.28);
-  --cta-button-border-hover: rgba(8, 18, 41, 0.42);
-  --cta-secondary-border: rgba(248, 250, 252, 0.55);
-  --cta-secondary-border-hover: rgba(248, 250, 252, 0.75);
+  --cta-button-border: rgba(15, 23, 42, 0.28);
+  --cta-button-border-hover: rgba(15, 23, 42, 0.42);
+  --cta-secondary-border: rgba(248, 250, 252, 0.6);
+  --cta-secondary-border-hover: rgba(248, 250, 252, 0.85);
 }
 
 body {
@@ -111,9 +111,63 @@ a:focus {
     border-color: rgba(148, 163, 184, 0.35);
   }
 
-  .bg-slate-900 .cta-card {
+.bg-slate-900 .cta-card {
     background: rgba(15, 23, 42, 0.65);
     border-color: rgba(148, 163, 184, 0.35);
+  }
+
+  a.bg-brand-navy,
+  button.bg-brand-navy {
+    border-color: rgba(148, 163, 184, 0.45);
+  }
+
+  a.bg-brand-navy:hover,
+  a.bg-brand-navy:focus-visible,
+  button.bg-brand-navy:hover,
+  button.bg-brand-navy:focus-visible {
+    border-color: rgba(186, 230, 253, 0.65);
+  }
+
+  :root {
+    --cta-card-background: linear-gradient(
+      135deg,
+      rgba(15, 23, 42, 0.92),
+      rgba(15, 23, 42, 0.72)
+    );
+    --cta-heading-color: #f8fafc;
+    --cta-copy-color: #cbd5f5;
+    --cta-button-background: linear-gradient(
+      135deg,
+      rgba(241, 245, 249, 0.2),
+      rgba(148, 163, 184, 0.3)
+    );
+    --cta-button-background-hover: linear-gradient(
+      135deg,
+      rgba(241, 245, 249, 0.32),
+      rgba(148, 163, 184, 0.42)
+    );
+    --cta-button-text: #f8fafc;
+    --cta-button-border: rgba(148, 163, 184, 0.5);
+    --cta-button-border-hover: rgba(186, 230, 253, 0.65);
+    --cta-secondary-border: rgba(248, 250, 252, 0.35);
+    --cta-secondary-border-hover: rgba(248, 250, 252, 0.55);
+  }
+
+  .contact-cta .cta-card {
+    box-shadow: 0 24px 55px rgba(8, 18, 41, 0.45);
+  }
+
+  .contact-cta .cta-card .cta-button {
+    box-shadow: 0 18px 40px rgba(8, 18, 41, 0.3);
+  }
+
+  .contact-cta .cta-card .cta-button:focus-visible {
+    box-shadow: 0 18px 40px rgba(8, 18, 41, 0.3), 0 0 0 3px rgba(59, 130, 246, 0.4);
+  }
+
+  .contact-cta .cta-card a:not(.cta-button):hover,
+  .contact-cta .cta-card a:not(.cta-button):focus-visible {
+    background-color: rgba(248, 250, 252, 0.08);
   }
 
   .bg-slate-900 .case-card h3,
@@ -289,6 +343,65 @@ a:focus {
   border: 1px solid rgba(15, 31, 61, 0.08);
 }
 
+
+.contact-cta .cta-card {
+  background: var(--cta-card-background);
+  border: 1px solid var(--cta-secondary-border);
+  box-shadow: 0 24px 55px rgba(15, 31, 61, 0.3);
+  color: var(--cta-copy-color);
+}
+
+.contact-cta .cta-card h2 {
+  color: var(--cta-heading-color);
+}
+
+.contact-cta .cta-card p {
+  color: var(--cta-copy-color);
+}
+
+.contact-cta .cta-card .cta-button {
+  background: var(--cta-button-background);
+  border: 1px solid var(--cta-button-border);
+  color: var(--cta-button-text);
+  box-shadow: 0 18px 40px rgba(8, 18, 41, 0.25);
+}
+
+.contact-cta .cta-card .cta-button:hover,
+.contact-cta .cta-card .cta-button:focus-visible {
+  background: var(--cta-button-background-hover);
+  border-color: var(--cta-button-border-hover);
+  color: var(--cta-button-text);
+}
+
+.contact-cta .cta-card .cta-button:focus-visible {
+  box-shadow: 0 18px 40px rgba(8, 18, 41, 0.25), 0 0 0 3px rgba(56, 189, 248, 0.35);
+}
+
+.contact-cta .cta-card a:not(.cta-button) {
+  border-color: var(--cta-secondary-border);
+  color: var(--cta-heading-color);
+}
+
+.contact-cta .cta-card a:not(.cta-button):hover,
+.contact-cta .cta-card a:not(.cta-button):focus-visible {
+  border-color: var(--cta-secondary-border-hover);
+  background-color: rgba(248, 250, 252, 0.1);
+  color: var(--cta-heading-color);
+}
+
+a.bg-brand-navy,
+button.bg-brand-navy {
+  border: 1px solid rgba(248, 250, 252, 0.55);
+  color: #ffffff;
+}
+
+a.bg-brand-navy:hover,
+a.bg-brand-navy:focus-visible,
+button.bg-brand-navy:hover,
+button.bg-brand-navy:focus-visible {
+  border-color: rgba(248, 250, 252, 0.85);
+}
+
 .cta-button {
   background: linear-gradient(135deg, #f8fafc, #e2e8f0);
   color: #0b172a;
@@ -414,6 +527,7 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
 
 
