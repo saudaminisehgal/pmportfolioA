@@ -15,6 +15,38 @@
   --shadow-soft: 0 20px 45px rgba(15, 31, 61, 0.1);
 }
 
+.bg-brand-navy {
+  background-color: #081229;
+  color: #ffffff;
+}
+
+.text-brand-navy {
+  color: #081229;
+}
+
+.text-brand-slate {
+  color: var(--color-slate);
+}
+
+.text-brand-sky {
+  color: #38bdf8;
+}
+
+.border-brand-navy {
+  border-color: #081229;
+}
+
+.hover\:bg-brand-sky:hover {
+  background-color: #38bdf8;
+}
+
+.hover\:text-brand-sky:hover {
+  color: #38bdf8;
+}
+
+.hover\:bg-brand-navy\/10:hover {
+  background-color: rgba(8, 18, 41, 0.1);
+}
 body {
   font-family:
     "Inter",
@@ -309,5 +341,6 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
 
