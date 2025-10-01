@@ -292,6 +292,7 @@ a:focus {
   border: 1px solid rgba(15, 31, 61, 0.08);
 }
 
+
 .contact-cta .cta-card {
   background: linear-gradient(135deg, #0b172a, #1f2937);
   color: #f8fafc;
@@ -371,6 +372,7 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
 
 
