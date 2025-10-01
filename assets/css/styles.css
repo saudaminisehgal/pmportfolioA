@@ -281,10 +281,10 @@ a:focus {
 }
 
 .contact-cta .cta-card h2,
-.contact-cta .cta-card p,
-.contact-cta .cta-card a {
+.contact-cta .cta-card p, {  color: inherit;}
+/* .contact-cta .cta-card a {
   color: inherit;
-}
+} */
 
 .cta-button {
   background: linear-gradient(135deg, #f8fafc, #e2e8f0);
@@ -353,6 +353,7 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
 
 
