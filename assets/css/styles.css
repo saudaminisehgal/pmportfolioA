@@ -13,6 +13,16 @@
   --color-card: #ffffff;
   --color-accent: #38bdf8;
   --shadow-soft: 0 20px 45px rgba(15, 31, 61, 0.1);
+cta-card-background: linear-gradient(135deg, #081229, #163260);
+  --cta-heading-color: #f8fafc;
+  --cta-copy-color: #e2e8f0;
+  --cta-button-background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  --cta-button-background-hover: linear-gradient(135deg, #e2e8f0, #cbd5f5);
+  --cta-button-text: #0b172a;
+  --cta-button-border: rgba(8, 18, 41, 0.28);
+  --cta-button-border-hover: rgba(8, 18, 41, 0.42);
+  --cta-secondary-border: rgba(248, 250, 252, 0.55);
+  --cta-secondary-border-hover: rgba(248, 250, 252, 0.75);
 }
 
 body {
@@ -121,6 +131,43 @@ a:focus {
   .bg-slate-900 .case-card .badge {
     background: rgba(148, 163, 184, 0.2);
     color: #e2e8f0;
+  }
+
+  :root {
+    --cta-card-background: linear-gradient(
+      135deg,
+      rgba(15, 23, 42, 0.92),
+      rgba(15, 23, 42, 0.72)
+    );
+    --cta-heading-color: #f8fafc;
+    --cta-copy-color: #cbd5f5;
+    --cta-button-background: linear-gradient(
+      135deg,
+      rgba(241, 245, 249, 0.24),
+      rgba(148, 163, 184, 0.3)
+    );
+    --cta-button-background-hover: linear-gradient(
+      135deg,
+      rgba(241, 245, 249, 0.34),
+      rgba(148, 163, 184, 0.42)
+    );
+    --cta-button-text: #f8fafc;
+    --cta-button-border: rgba(148, 163, 184, 0.5);
+    --cta-button-border-hover: rgba(186, 230, 253, 0.65);
+    --cta-secondary-border: rgba(248, 250, 252, 0.35);
+    --cta-secondary-border-hover: rgba(248, 250, 252, 0.55);
+  }
+
+  a.bg-brand-navy,
+  button.bg-brand-navy {
+    border-color: rgba(148, 163, 184, 0.4);
+  }
+
+  a.bg-brand-navy:hover,
+  a.bg-brand-navy:focus-visible,
+  button.bg-brand-navy:hover,
+  button.bg-brand-navy:focus-visible {
+    border-color: rgba(186, 230, 253, 0.6);
   }
 }
 
@@ -255,6 +302,64 @@ a:focus {
   color: #0b172a;
 }
 
+.contact-cta .cta-card {
+  background: var(--cta-card-background);
+  border: 1px solid rgba(8, 18, 41, 0.32);
+  box-shadow: 0 22px 50px rgba(8, 18, 41, 0.35);
+  color: var(--cta-copy-color);
+}
+
+.contact-cta .cta-card h2 {
+  color: var(--cta-heading-color);
+}
+
+.contact-cta .cta-card p {
+  color: var(--cta-copy-color);
+}
+
+.contact-cta .cta-card .cta-button {
+  background: var(--cta-button-background);
+  border: 1px solid var(--cta-button-border);
+  box-shadow: 0 18px 40px rgba(8, 18, 41, 0.25);
+  color: var(--cta-button-text);
+}
+
+.contact-cta .cta-card .cta-button:hover,
+.contact-cta .cta-card .cta-button:focus-visible {
+  background: var(--cta-button-background-hover);
+  border-color: var(--cta-button-border-hover);
+  color: var(--cta-button-text);
+}
+
+.contact-cta .cta-card .cta-button:focus-visible {
+  box-shadow: 0 18px 40px rgba(8, 18, 41, 0.25), 0 0 0 3px rgba(59, 130, 246, 0.35);
+}
+
+.contact-cta .cta-card a:not(.cta-button) {
+  border-color: var(--cta-secondary-border);
+  color: var(--cta-heading-color);
+}
+
+.contact-cta .cta-card a:not(.cta-button):hover,
+.contact-cta .cta-card a:not(.cta-button):focus-visible {
+  border-color: var(--cta-secondary-border-hover);
+  background-color: rgba(248, 250, 252, 0.08);
+  color: var(--cta-heading-color);
+}
+
+a.bg-brand-navy,
+button.bg-brand-navy {
+  border: 1px solid rgba(248, 250, 252, 0.45);
+  color: #ffffff;
+}
+
+a.bg-brand-navy:hover,
+a.bg-brand-navy:focus-visible,
+button.bg-brand-navy:hover,
+button.bg-brand-navy:focus-visible {
+  border-color: rgba(186, 230, 253, 0.75);
+}
+
 blockquote {
   border-left: 4px solid var(--color-navy);
   padding-left: 1.25rem;
@@ -309,5 +414,6 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
 
