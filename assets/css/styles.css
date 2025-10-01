@@ -97,25 +97,25 @@ a:focus {
 .dark .navbar {
   background: rgba(15, 23, 42, 0.9);
 }
-.bg-slate-900 .case-card {␊
-  color: #f8fafc;
-}␊
-␊
-.bg-slate-900 .case-card h3,␊
-.bg-slate-900 .case-card .text-brand-navy {␊
-  color: #f8fafc;
-}␊
-␊
-.bg-slate-900 .case-card p,␊
-.bg-slate-900 .case-card li,␊
-.bg-slate-900 .case-card .text-slate-600,␊
-.bg-slate-900 .case-card .text-slate-500 {␊
-  color: #e2e8f0;
-}␊
-␊
-.bg-slate-900 .case-card .badge {␊
-  color: #f8fafc;
-}␊
+.bg-slate-900 .case-card {␍␊
+  color: #0b172a;
+}␍␊
+␍␊
+.bg-slate-900 .case-card h3,␍␊
+.bg-slate-900 .case-card .text-brand-navy {␍␊
+  color: #0b172a;
+}␍␊
+␍␊
+.bg-slate-900 .case-card p,␍␊
+.bg-slate-900 .case-card li,␍␊
+.bg-slate-900 .case-card .text-slate-600,␍␊
+.bg-slate-900 .case-card .text-slate-500 {␍␊
+  color: #475569;
+}␍␊
+␍␊
+.bg-slate-900 .case-card .badge {␍␊
+  color: var(--color-navy);
+}␍␊
 @media (prefers-color-scheme: dark) {
   body {
     background: #0b1220; /* color: #e2e8f0;*/
@@ -372,6 +372,7 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
 
 
