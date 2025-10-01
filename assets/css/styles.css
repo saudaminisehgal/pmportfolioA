@@ -110,7 +110,7 @@ a:focus {
 .bg-slate-900 .case-card li,␊
 .bg-slate-900 .case-card .text-slate-600,␊
 .bg-slate-900 .case-card .text-slate-500 {␊
-  color: #e2e8f0;
+  color: #cbd5f5;
 }␊
 ␊
 .bg-slate-900 .case-card .badge {␊
@@ -372,7 +372,6 @@ svg {
     font-size: 0.85em;
   }
 }
-
 
 
 
