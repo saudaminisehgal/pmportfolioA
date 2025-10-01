@@ -97,25 +97,7 @@ a:focus {
 .dark .navbar {
   background: rgba(15, 23, 42, 0.9);
 }
-.bg-slate-900 .case-card {
-  color: #f8fafc;
-}
 
-.bg-slate-900 .case-card h3,
-.bg-slate-900 .case-card .text-brand-navy {
-  color: #f8fafc;
-}
-
-.bg-slate-900 .case-card p,
-.bg-slate-900 .case-card li,
-.bg-slate-900 .case-card .text-slate-600,
-.bg-slate-900 .case-card .text-slate-500 {
-color: #cbd5f5;
-}
-
-.bg-slate-900 .case-card .badge {
-  color: #f8fafc;
-}
 @media (prefers-color-scheme: dark) {
   body {
     background: #0b1220; /* color: #e2e8f0;*/
@@ -156,18 +138,6 @@ color: #cbd5f5;
     border-color: rgba(148, 163, 184, 0.35);
   }
 
-  .bg-slate-900 .case-card h3,
-  .bg-slate-900 .case-card .text-brand-navy {
-    color: #f1f5f9;
-  }
-
-  .bg-slate-900 .case-card p,
-  .bg-slate-900 .case-card li,
-  .bg-slate-900 .case-card .text-slate-600,
-  .bg-slate-900 .case-card .text-slate-500 {
-    color: #cbd5f5;
-  }
-
   .bg-slate-900 .case-card .badge {
     background: rgba(148, 163, 184, 0.2);
     color: #e2e8f0;
@@ -190,7 +160,6 @@ color: #cbd5f5;
   padding: 1.75rem;
   box-shadow: var(--shadow-soft);
 }
-
 .case-card {
   background: linear-gradient(
     135deg,
@@ -203,6 +172,18 @@ color: #cbd5f5;
   transition:
     transform 0.25s ease,
     box-shadow 0.25s ease;
+}
+
+.case-card h3,
+.case-card .text-brand-navy {
+  color: var(--color-deep-blue);
+}
+
+.case-card p,
+.case-card li,
+.case-card .text-slate-600,
+.case-card .text-slate-500 {
+  color: var(--color-slate-muted);
 }
 
 .case-card:hover,
@@ -269,7 +250,6 @@ color: #cbd5f5;
   border: 1px solid rgba(15, 31, 61, 0.1);
   box-shadow: 0 12px 30px rgba(15, 31, 61, 0.08);
 }
-
 .bg-slate-900 .timeline-card {
   background: rgba(15, 23, 42, 0.72);
   border-color: rgba(148, 163, 184, 0.35);
@@ -277,6 +257,25 @@ color: #cbd5f5;
   backdrop-filter: blur(6px);
 }
 
+.bg-slate-900 .case-card {
+  color: #e2e8f0;
+}
+
+.bg-slate-900 .case-card h3,
+.bg-slate-900 .case-card .text-brand-navy {
+  color: #f8fafc;
+}
+
+.bg-slate-900 .case-card p,
+.bg-slate-900 .case-card li,
+.bg-slate-900 .case-card .text-slate-600,
+.bg-slate-900 .case-card .text-slate-500 {
+  color: #dbeafe;
+}
+
+.bg-slate-900 .case-card .badge {
+  color: #f8fafc;
+}
 .prose-callout {
   border-left: 4px solid var(--color-navy);
   background: rgba(15, 31, 61, 0.05);
@@ -372,6 +371,7 @@ svg {
     font-size: 0.85em;
   }
 }
+
 
 
 
